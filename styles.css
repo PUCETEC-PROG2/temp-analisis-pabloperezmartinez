@@ -1,0 +1,157 @@
+body {
+    background-image: url(pokemon-in-the-wild.png);
+    text-align: center;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Asegura que el fondo cubra toda la altura de la ventana */
+    margin: 0; /* Elimina los márgenes para que no haya espacio alrededor */;
+}
+
+h1 {
+    font-size: 4em; /* Tamaño grande del texto */
+    color: white; /* Color del texto blanco */
+    text-align: center; /* Asegura que el texto esté centrado dentro del h1 */
+    font-weight: bold; /* Pone el texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para hacer resaltar el texto */
+    -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+    background-image: linear-gradient(45deg, #000, #fff); /* Gradiente de color negro a blanco */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border: 2px solid black; /* Borde negro alrededor del h1 */
+    display: inline-block; /* Hace que el borde se ajuste al tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+h2 {
+    font-size: 1em; /* Tamaño grande del texto */
+    color: rgb(0, 0, 0); /* Color del texto blanco */
+    text-align: center; /* Asegura que el texto esté centrado dentro del h1 */
+    font-weight: bold; /* Pone el texto en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para hacer resaltar el texto */
+    -webkit-background-clip: text; /* Aplica el fondo solo al texto */
+    background-image: linear-gradient(45deg, #000, #fff); /* Gradiente de color negro a blanco */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border: 2px solid black; /* Borde negro alrededor del h1 */
+    display: inline-block; /* Hace que el borde se ajuste al tamaño del texto */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+ul {
+    list-style-type: none; /* Quita los bullets o puntos de la lista */
+    margin: 0; /* Elimina el margen alrededor de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+    border-radius: 8px; /* Bordes redondeados en la lista */
+    width: 80%; /* Ancho de la lista en relación al contenedor padre */
+    max-width: 800px; /* Máximo ancho de la lista */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar un efecto flotante */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    padding: 20px; /* Padding para espacio interno */
+
+    display: flex;
+    flex-direction: fila; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos en la parte superior */
+    margin-left: auto; /* Centra horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+}
+
+li {
+    font-family: 'Open Sans', Arial, sans-serif; /* Fuente personalizada */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+    color: #333; /* Color oscuro para el texto */
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+    padding: 10px; /* Espaciado interno de cada elemento de la lista */
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+    background-color: #f9f9f9; /* Fondo suave para cada ítem de la lista */
+    border-left: 4px solid #007BFF; /* Línea a la izquierda del ítem de la lista */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s ease-in-out; /* Transiciones para hover */
+}
+
+form {
+    padding: 20px; /* Espaciado interno alrededor de los elementos */
+    text-align: center;
+    margin: 30px auto; /* Márgenes automáticos para centrar el formulario */
+    width: 100%; /* El formulario ocupará el 100% del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor del formulario */
+    font-family: Arial, sans-serif; /* Fuente más moderna y legible */
+}
+
+form button {
+    padding: 12px; /* Padding generoso para el botón */
+    background-color: #007BFF; /* Fondo azul para el botón */
+    color: #fff; /* Texto blanco en el botón */
+    font-size: 1.2em; /* Tamaño de fuente grande para el botón */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 5px; /* Bordes redondeados en el botón */
+    cursor: pointer; /* Muestra el cursor en forma de mano */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para el fondo y el tamaño */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Cambia el color del botón a un tono más oscuro */
+    transform: scale(1.05); /* Agranda ligeramente el botón al pasar el mouse */
+}
+
+form button:active {
+    transform: scale(1); /* Vuelve al tamaño original al hacer clic */
+}
+
+label, input, button {
+    /**
+    Estilos agregados por el estudiante para los elementos del formulario
+    */
+}
+
+#pokemon-list {
+    display: flex; /* Establece un contenedor flex */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en una línea */
+    gap: 20px; /* Espacio entre los elementos de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding predeterminado */
+}
+  
+#pokemon-list li {
+    background-color: rgba(244, 244, 244, 0.3); /* Gris claro con 50% de transparencia */
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+  
+  
+#pokemon-list li h2 {
+    margin: 0 0 10px 0; /* Elimina el margen superior del h2 */
+    font-size: 1.5em; /* Tamaño de fuente para el nombre */
+}
+  
+#pokemon-list li p {
+    margin: 5px 0; /* Espaciado entre párrafos */
+}
+  
+a {
+    color: #000000; /* Color predeterminado azul para el enlace */
+    font-size: 2em;
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    font-weight: bold; /* Hace el texto en negrita */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transición suave para el color y el subrayado */
+}
+
+/* Efecto hover: cambia el color y subraya el enlace */
+a:hover {
+    color: #0056b3; /* Color más oscuro al pasar el ratón */
+    text-decoration: underline; /* Añade subrayado cuando el enlace es hovered */
+}
+
+/* Efecto active: cuando el enlace es clickeado */
+a:active {
+    color: #003d73; /* Cambia el color cuando el enlace es clickeado */
+    text-decoration: none; /* Elimina el subrayado al hacer clic */
+}
+
+/* Efecto focus: para accesibilidad (cuando el enlace está en foco, como con la tecla Tab) */
+a:focus {
+    outline: 2px solid #0056b3; /* Resalta el enlace con un borde cuando tiene el foco */
+    text-decoration: none; /* Elimina el subrayado al hacer foco */
+}
