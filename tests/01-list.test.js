@@ -25,7 +25,7 @@ describe('Lista de Pokemones', () => {
     const list = document.getElementById('pokemon-list');
     assert(list !== null, 'Debe crear una lista con el ID "pokemon-list" en el archivo index.html');
     const items = list.querySelectorAll('li');
-    assert.strictEqual(items.length, 3, 'La lista de pokemones debe contener 3 elementos');
+    assert.strictEqual(items.length, 4, 'La lista de pokemones debe contener 4 elementos');
   });
 
   test('Existe el primer pokemon, es Pikachu y tiene los detalles correctos', () => {
